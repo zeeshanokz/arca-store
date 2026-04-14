@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/components/CategoryFilter.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1776190805808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1776193705179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,19 @@\n-export default function CategoryFilter({ categories, activeCategory, onCategoryChange }) {\n+export default function CategoryFilter({\n+  categories,\n+  activeCategory,\n+  onCategoryChange,\n+}) {\n   return (\n     <div className=\"flex flex-wrap gap-2\">\n       {categories.map((category) => (\n         <button\n           key={category}\n           onClick={() => onCategoryChange(category)}\n           className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400 ${\n             activeCategory === category\n-              ? 'bg-slate-900 text-white shadow-md'\n-              : 'bg-white text-slate-600 border border-gray-200 hover:border-slate-400 hover:text-slate-900'\n+              ? \"bg-slate-900 text-white shadow-md\"\n+              : \"bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-gray-200 dark:border-slate-600 hover:border-slate-400 hover:text-slate-900 dark:hover:border-slate-400 dark:hover:text-white\"\n           }`}\n         >\n           {category}\n         </button>\n"
+                }
+            ],
+            "date": 1776190805808,
+            "name": "Commit-0",
+            "content": "export default function CategoryFilter({ categories, activeCategory, onCategoryChange }) {\n  return (\n    <div className=\"flex flex-wrap gap-2\">\n      {categories.map((category) => (\n        <button\n          key={category}\n          onClick={() => onCategoryChange(category)}\n          className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400 ${\n            activeCategory === category\n              ? 'bg-slate-900 text-white shadow-md'\n              : 'bg-white text-slate-600 border border-gray-200 hover:border-slate-400 hover:text-slate-900'\n          }`}\n        >\n          {category}\n        </button>\n      ))}\n    </div>\n  );\n}\n"
+        }
+    ]
+}

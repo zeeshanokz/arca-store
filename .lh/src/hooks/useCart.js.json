@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/hooks/useCart.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1776190805809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1776193235702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n-import { useState, useEffect } from 'react';\n-import { products } from '../data/products';\n+import { useState, useEffect } from \"react\";\n+import { products } from \"../data/products\";\n \n export function useCart() {\n   const [cart, setCart] = useState(() => {\n     try {\n-      const saved = localStorage.getItem('arca-cart');\n+      const saved = localStorage.getItem(\"arca-cart\");\n       return saved ? JSON.parse(saved) : [];\n     } catch {\n       return [];\n     }\n@@ -13,14 +13,13 @@\n \n   const [toast, setToast] = useState(null);\n \n   useEffect(() => {\n-    localStorage.setItem('arca-cart', JSON.stringify(cart));\n+    localStorage.setItem(\"arca-cart\", JSON.stringify(cart));\n   }, [cart]);\n \n   const showToast = (message) => {\n     setToast(message);\n-    setTimeout(() => setToast(null), 2500);\n   };\n \n   const addToCart = (productId, quantity = 1) => {\n     setCart((prev) => {\n@@ -28,9 +27,9 @@\n       if (existing) {\n         return prev.map((item) =>\n           item.id === productId\n             ? { ...item, quantity: item.quantity + quantity }\n-            : item\n+            : item,\n         );\n       }\n       return [...prev, { id: productId, quantity }];\n     });\n@@ -47,10 +46,10 @@\n       removeFromCart(productId);\n     } else {\n       setCart((prev) =>\n         prev.map((item) =>\n-          item.id === productId ? { ...item, quantity } : item\n-        )\n+          item.id === productId ? { ...item, quantity } : item,\n+        ),\n       );\n     }\n   };\n \n"
+                }
+            ],
+            "date": 1776190805809,
+            "name": "Commit-0",
+            "content": "import { useState, useEffect } from 'react';\nimport { products } from '../data/products';\n\nexport function useCart() {\n  const [cart, setCart] = useState(() => {\n    try {\n      const saved = localStorage.getItem('arca-cart');\n      return saved ? JSON.parse(saved) : [];\n    } catch {\n      return [];\n    }\n  });\n\n  const [toast, setToast] = useState(null);\n\n  useEffect(() => {\n    localStorage.setItem('arca-cart', JSON.stringify(cart));\n  }, [cart]);\n\n  const showToast = (message) => {\n    setToast(message);\n    setTimeout(() => setToast(null), 2500);\n  };\n\n  const addToCart = (productId, quantity = 1) => {\n    setCart((prev) => {\n      const existing = prev.find((item) => item.id === productId);\n      if (existing) {\n        return prev.map((item) =>\n          item.id === productId\n            ? { ...item, quantity: item.quantity + quantity }\n            : item\n        );\n      }\n      return [...prev, { id: productId, quantity }];\n    });\n    const product = products.find((p) => p.id === productId);\n    if (product) showToast(`${product.name} added to cart`);\n  };\n\n  const removeFromCart = (productId) => {\n    setCart((prev) => prev.filter((item) => item.id !== productId));\n  };\n\n  const updateQuantity = (productId, quantity) => {\n    if (quantity <= 0) {\n      removeFromCart(productId);\n    } else {\n      setCart((prev) =>\n        prev.map((item) =>\n          item.id === productId ? { ...item, quantity } : item\n        )\n      );\n    }\n  };\n\n  const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);\n\n  return {\n    cart,\n    cartCount,\n    toast,\n    setToast,\n    addToCart,\n    removeFromCart,\n    updateQuantity,\n  };\n}\n"
+        }
+    ]
+}

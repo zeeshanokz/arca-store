@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/components/SkeletonCard.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1776190805808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1776191697301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n export default function SkeletonCard() {\n   return (\n     <div className=\"bg-white rounded-2xl overflow-hidden shadow-sm animate-pulse\">\n-      <div className=\"aspect-[4/3] bg-gray-200\" />\n+      <div className=\"aspect-4/3 bg-gray-200\" />\n       <div className=\"p-5 space-y-3\">\n         <div className=\"h-4 bg-gray-200 rounded-lg w-3/4\" />\n         <div className=\"h-3 bg-gray-200 rounded-lg w-full\" />\n         <div className=\"h-3 bg-gray-200 rounded-lg w-2/3\" />\n"
+                },
+                {
+                    "date": 1776193705179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,20 +1,20 @@\n export default function SkeletonCard() {\n   return (\n-    <div className=\"bg-white rounded-2xl overflow-hidden shadow-sm animate-pulse\">\n-      <div className=\"aspect-4/3 bg-gray-200\" />\n+    <div className=\"bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm animate-pulse\">\n+      <div className=\"aspect-[4/3] bg-gray-200 dark:bg-slate-700\" />\n       <div className=\"p-5 space-y-3\">\n-        <div className=\"h-4 bg-gray-200 rounded-lg w-3/4\" />\n-        <div className=\"h-3 bg-gray-200 rounded-lg w-full\" />\n-        <div className=\"h-3 bg-gray-200 rounded-lg w-2/3\" />\n+        <div className=\"h-4 bg-gray-200 dark:bg-slate-700 rounded-lg w-3/4\" />\n+        <div className=\"h-3 bg-gray-200 dark:bg-slate-700 rounded-lg w-full\" />\n+        <div className=\"h-3 bg-gray-200 dark:bg-slate-700 rounded-lg w-2/3\" />\n         <div className=\"flex gap-1 pt-1\">\n           {Array.from({ length: 5 }).map((_, i) => (\n-            <div key={i} className=\"h-4 w-4 bg-gray-200 rounded\" />\n+            <div key={i} className=\"h-4 w-4 bg-gray-200 dark:bg-slate-700 rounded\" />\n           ))}\n         </div>\n         <div className=\"flex justify-between items-center pt-1\">\n-          <div className=\"h-6 bg-gray-200 rounded-lg w-16\" />\n-          <div className=\"h-9 bg-gray-200 rounded-xl w-28\" />\n+          <div className=\"h-6 bg-gray-200 dark:bg-slate-700 rounded-lg w-16\" />\n+          <div className=\"h-9 bg-gray-200 dark:bg-slate-700 rounded-xl w-28\" />\n         </div>\n       </div>\n     </div>\n   );\n"
+                }
+            ],
+            "date": 1776190805808,
+            "name": "Commit-0",
+            "content": "export default function SkeletonCard() {\n  return (\n    <div className=\"bg-white rounded-2xl overflow-hidden shadow-sm animate-pulse\">\n      <div className=\"aspect-[4/3] bg-gray-200\" />\n      <div className=\"p-5 space-y-3\">\n        <div className=\"h-4 bg-gray-200 rounded-lg w-3/4\" />\n        <div className=\"h-3 bg-gray-200 rounded-lg w-full\" />\n        <div className=\"h-3 bg-gray-200 rounded-lg w-2/3\" />\n        <div className=\"flex gap-1 pt-1\">\n          {Array.from({ length: 5 }).map((_, i) => (\n            <div key={i} className=\"h-4 w-4 bg-gray-200 rounded\" />\n          ))}\n        </div>\n        <div className=\"flex justify-between items-center pt-1\">\n          <div className=\"h-6 bg-gray-200 rounded-lg w-16\" />\n          <div className=\"h-9 bg-gray-200 rounded-xl w-28\" />\n        </div>\n      </div>\n    </div>\n  );\n}\n"
+        }
+    ]
+}

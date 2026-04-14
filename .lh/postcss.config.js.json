@@ -1,0 +1,26 @@
+{
+    "sourceFile": "postcss.config.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1776176779090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1776176815597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+src/main.jsx\n+\n export default {\n   plugins: {\n     tailwindcss: {},\n     autoprefixer: {},\n"
+                },
+                {
+                    "date": 1776189534741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n export default {\n   plugins: {\n-    tailwindcss: {},\n+    \"@tailwindcss/postcss\": {},\n     autoprefixer: {},\n   },\n-};\n+}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1776176779090,
+            "name": "Commit-0",
+            "content": "export default {\n  plugins: {\n    tailwindcss: {},\n    autoprefixer: {},\n  },\n}"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/components/SearchBar.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1776190805809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1776193705179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,18 +18,28 @@\n         type=\"text\"\n         value={value}\n         onChange={(e) => onChange(e.target.value)}\n         placeholder=\"Search products...\"\n-        className=\"w-full pl-10 pr-10 py-3 bg-white border border-gray-200 rounded-xl text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200\"\n+        className=\"w-full pl-10 pr-10 py-3 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-600 rounded-xl text-sm text-slate-800 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200\"\n       />\n       {value && (\n         <button\n-          onClick={() => onChange('')}\n+          onClick={() => onChange(\"\")}\n           className=\"absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-700 transition-colors\"\n           aria-label=\"Clear search\"\n         >\n-          <svg className=\"h-4 w-4\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n-            <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth={2} d=\"M6 18L18 6M6 6l12 12\" />\n+          <svg\n+            className=\"h-4 w-4\"\n+            fill=\"none\"\n+            viewBox=\"0 0 24 24\"\n+            stroke=\"currentColor\"\n+          >\n+            <path\n+              strokeLinecap=\"round\"\n+              strokeLinejoin=\"round\"\n+              strokeWidth={2}\n+              d=\"M6 18L18 6M6 6l12 12\"\n+            />\n           </svg>\n         </button>\n       )}\n     </div>\n"
+                }
+            ],
+            "date": 1776190805809,
+            "name": "Commit-0",
+            "content": "export default function SearchBar({ value, onChange }) {\n  return (\n    <div className=\"relative\">\n      <svg\n        className=\"absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400 pointer-events-none\"\n        fill=\"none\"\n        viewBox=\"0 0 24 24\"\n        stroke=\"currentColor\"\n      >\n        <path\n          strokeLinecap=\"round\"\n          strokeLinejoin=\"round\"\n          strokeWidth={2}\n          d=\"M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z\"\n        />\n      </svg>\n      <input\n        type=\"text\"\n        value={value}\n        onChange={(e) => onChange(e.target.value)}\n        placeholder=\"Search products...\"\n        className=\"w-full pl-10 pr-10 py-3 bg-white border border-gray-200 rounded-xl text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200\"\n      />\n      {value && (\n        <button\n          onClick={() => onChange('')}\n          className=\"absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-700 transition-colors\"\n          aria-label=\"Clear search\"\n        >\n          <svg className=\"h-4 w-4\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n            <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth={2} d=\"M6 18L18 6M6 6l12 12\" />\n          </svg>\n        </button>\n      )}\n    </div>\n  );\n}\n"
+        }
+    ]
+}
