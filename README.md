@@ -1,6 +1,6 @@
 # ARCA Store — Premium Tech Workspace
 
-A polished e-commerce storefront built with **React 19** and **Tailwind CSS v4**, submitted as a Frontend Internship Technical Skills Assessment.
+A polished e-commerce storefront built with **React 18** and **Tailwind CSS v4**, submitted as a Frontend Internship Technical Skills Assessment.
 
 ## Live Demo
 
