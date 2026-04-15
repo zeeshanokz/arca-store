@@ -12,7 +12,6 @@ function CheckoutModal({ total, onClose }) {
         className="bg-white dark:bg-slate-800 rounded-3xl shadow-2xl w-full max-w-sm p-8 text-center animate-slide-up"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Icon */}
         <div className="mx-auto mb-5 h-16 w-16 rounded-full bg-green-100 flex items-center justify-center">
           <svg
             className="h-8 w-8 text-green-500"

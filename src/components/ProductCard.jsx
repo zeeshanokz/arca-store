@@ -16,7 +16,6 @@ export default function ProductCard({ product, onAddToCart, onViewDetail }) {
       className="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group cursor-pointer flex flex-col border border-transparent hover:border-blue-100 dark:hover:border-blue-700"
       onClick={() => onViewDetail(id)}
     >
-      {/* Image */}
       <div className="relative overflow-hidden aspect-4/3 bg-gray-100 dark:bg-slate-700">
         <img
           src={image}
@@ -29,7 +28,6 @@ export default function ProductCard({ product, onAddToCart, onViewDetail }) {
         </span>
       </div>
 
-      {/* Content */}
       <div className="p-5 flex flex-col flex-1">
         <h3 className="font-semibold text-slate-800 dark:text-white text-base mb-1 line-clamp-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
           {name}
@@ -38,7 +36,6 @@ export default function ProductCard({ product, onAddToCart, onViewDetail }) {
           {tagline}
         </p>
 
-        {/* Rating */}
         <div className="flex items-center gap-1.5 mb-4">
           <div className="flex gap-0.5">
             {Array.from({ length: 5 }).map((_, i) => (
@@ -50,7 +47,6 @@ export default function ProductCard({ product, onAddToCart, onViewDetail }) {
           </span>
         </div>
 
-        {/* Price + Add to Cart */}
         <div className="flex items-center gap-3">
           <span className="text-xl font-bold text-slate-900 dark:text-white">
             ${price.toFixed(2)}
