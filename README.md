@@ -5,7 +5,7 @@ A polished e-commerce storefront built with **React 19** and **Tailwind CSS v4**
 ## Live Demo
 
 > Deploy to Vercel / Netlify and paste the URL here.
-
+https://arca-store.vercel.app/
 ## Getting Started
 
 ```bash
@@ -47,7 +47,7 @@ npm run preview # preview the production build locally
 
 | Tool         | Version |
 | ------------ | ------- |
-| React        | 19      |
+| React        | 18    |
 | Vite         | 8       |
 | Tailwind CSS | 4       |
 | PostCSS      | 8       |
