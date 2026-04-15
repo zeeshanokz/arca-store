@@ -13,13 +13,9 @@ export default function Home({ onNavigate, onAddToCart }) {
 
   return (
     <div>
-      {/* Hero */}
       <section className="relative overflow-hidden bg-slate-950 text-white">
-        {/* Dot-grid decorative overlay */}
         <div className="absolute inset-0 bg-dot-grid pointer-events-none" />
-        {/* Ambient glow — top-right */}
         <div className="absolute -top-32 -right-32 w-150 h-150 rounded-full bg-blue-600/20 blur-3xl pointer-events-none" />
-        {/* Ambient glow — bottom-left */}
         <div className="absolute bottom-0 left-1/4 w-87.5 h-87.5 rounded-full bg-blue-500/10 blur-3xl pointer-events-none" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-36">
@@ -59,7 +55,6 @@ export default function Home({ onNavigate, onAddToCart }) {
         </div>
       </section>
 
-      {/* Stats bar */}
       <section className="bg-blue-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-center">
@@ -77,7 +72,6 @@ export default function Home({ onNavigate, onAddToCart }) {
         </div>
       </section>
 
-      {/* Featured Products */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
         <div className="flex items-end justify-between mb-8 sm:mb-10">
           <div>
@@ -108,12 +102,9 @@ export default function Home({ onNavigate, onAddToCart }) {
         </div>
       </section>
 
-      {/* CTA Banner */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="relative overflow-hidden bg-slate-900 rounded-3xl px-8 py-14 sm:py-20 text-center text-white">
-          {/* Dot grid overlay */}
           <div className="absolute inset-0 bg-dot-grid pointer-events-none" />
-          {/* Centre glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-blue-600/15 blur-3xl pointer-events-none" />
           <div className="relative">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4">

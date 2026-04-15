@@ -40,7 +40,6 @@ export default function ProductDetail({
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-      {/* Back button */}
       <button
         onClick={() => onNavigate("products")}
         className="flex items-center gap-2 text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors mb-8 group focus:outline-none"
@@ -62,7 +61,6 @@ export default function ProductDetail({
       </button>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
-        {/* Image */}
         <div className="aspect-square bg-gray-100 dark:bg-slate-800 rounded-3xl overflow-hidden">
           <img
             src={product.image}
@@ -71,9 +69,7 @@ export default function ProductDetail({
           />
         </div>
 
-        {/* Details */}
         <div className="flex flex-col">
-          {/* Category badge */}
           <span className="inline-flex w-fit bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-xs font-bold tracking-wide uppercase px-3 py-1 rounded-full mb-4 border border-blue-100 dark:border-blue-800">
             {product.category}
           </span>
@@ -82,7 +78,6 @@ export default function ProductDetail({
             {product.name}
           </h1>
 
-          {/* Rating */}
           <div className="flex items-center gap-2 mb-5">
             <div className="flex gap-0.5">
               {Array.from({ length: 5 }).map((_, i) => (
@@ -97,17 +92,14 @@ export default function ProductDetail({
             </span>
           </div>
 
-          {/* Price */}
           <div className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-6">
             ${product.price.toFixed(2)}
           </div>
 
-          {/* Description */}
           <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-8 text-sm sm:text-base">
             {product.description}
           </p>
 
-          {/* Specs */}
           <div className="mb-8">
             <h3 className="font-bold text-slate-900 dark:text-white mb-3">
               Specifications
@@ -125,7 +117,6 @@ export default function ProductDetail({
             </ul>
           </div>
 
-          {/* Quantity + Actions */}
           <div className="border-t border-gray-100 dark:border-slate-700 pt-6">
             <div className="flex items-center gap-4 mb-5">
               <span className="text-sm font-medium text-slate-700 dark:text-slate-300">

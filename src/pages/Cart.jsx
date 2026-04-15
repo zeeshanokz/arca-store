@@ -36,7 +36,7 @@ export default function Cart({ cart, onUpdateQuantity, onRemove, onNavigate }) {
       </h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {/* Cart items */}
+        
         <div className="lg:col-span-2 space-y-4">
           {cart.map((item) => {
             const product = products.find((p) => p.id === item.id);
@@ -75,7 +75,6 @@ export default function Cart({ cart, onUpdateQuantity, onRemove, onNavigate }) {
           </div>
         </div>
 
-        {/* Order summary */}
         <div>
           <OrderSummary cart={cart} products={products} />
         </div>

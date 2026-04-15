@@ -6,20 +6,17 @@
 @theme {
   --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 
-  /* ── Brand palette ──────────────────────────────────── */
-  --color-brand-950: #020617; /* deepest dark */
-  --color-brand-900: #0f172a; /* slate-900 — primary dark */
-  --color-brand-800: #1e293b; /* slate-800 */
-  --color-accent: #2563eb; /* blue-600  — main accent */
-  --color-accent-lt: #3b82f6; /* blue-500  — hover accent */
-  --color-highlight: #fbbf24; /* amber-400 — badge / star */
+  --color-brand-950: #020617; 
+  --color-brand-900: #0f172a; 
+  --color-brand-800: #1e293b; 
+  --color-accent: #2563eb; 
+  --color-accent-lt: #3b82f6; 
+  --color-highlight: #fbbf24; 
 
-  /* ── Border radius token ────────────────────────────── */
-  --radius-card: 1rem; /* 16 px — all cards */
-  --radius-pill: 0.75rem; /* 12 px — buttons */
+  --radius-card: 1rem; 
+  --radius-pill: 0.75rem; 
 }
 
-/* ── Decorative utilities ──────────────────────────────── */
 @utility bg-dot-grid {
   background-image: radial-gradient(
     circle,
@@ -29,7 +26,6 @@
   background-size: 28px 28px;
 }
 
-/* ── Keyframes ─────────────────────────────────────────── */
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -62,7 +58,6 @@
   }
 }
 
-/* ── Animation utilities ───────────────────────────────── */
 @utility animate-slide-up {
   animation: slideUp 0.35s ease-out forwards;
 }

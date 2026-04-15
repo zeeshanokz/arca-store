@@ -31,7 +31,6 @@ export default function Products({ onAddToCart, onViewDetail }) {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-      {/* Header */}
       <div className="mb-6">
         <h1 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mb-1">
           All Products
@@ -43,12 +42,10 @@ export default function Products({ onAddToCart, onViewDetail }) {
         </p>
       </div>
 
-      {/* Search */}
       <div className="mb-4">
         <SearchBar value={search} onChange={setSearch} />
       </div>
 
-      {/* Category Filter */}
       <div className="mb-8">
         <CategoryFilter
           categories={CATEGORIES}
@@ -57,7 +54,6 @@ export default function Products({ onAddToCart, onViewDetail }) {
         />
       </div>
 
-      {/* Grid */}
       {loading ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {Array.from({ length: 6 }).map((_, i) => (
