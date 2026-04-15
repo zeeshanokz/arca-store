@@ -94,7 +94,7 @@ export const products = [
       "Aluminium heat-dissipation shell",
     ],
     image:
-      "https://images.unsplash.com/photo-1625948515291-693750c6c4b4?auto=format&fit=crop&w=600&q=80",
+      "https://media.istockphoto.com/id/1155975789/photo/man-holding-mini-adapter-for-laptops-and-flash-memory.webp?a=1&b=1&s=612x612&w=0&k=20&c=H4aVayA6zkwGh4ORzZyJLPtmQaoNboO-aOofhCiTwmk=",
   },
   {
     id: 5,
